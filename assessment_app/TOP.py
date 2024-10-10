@@ -7,6 +7,7 @@ import pandas as pd
 from common_python.common import connect_db, close_db, select_year,select_month
 #from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN
 from common_python.assessment_query import get_assessment_data,get_assessment_sp_data,runk_assessment_data, get_assessment_month_lv_data,cntdata_query
+import os
 
 button_css = f"""
 <style>
@@ -20,7 +21,9 @@ button_css = f"""
 """
 st.markdown(button_css, unsafe_allow_html=True)
 
-with open('./config.yaml') as file:
+#with open('config.yaml') as file:
+filePath = os.path.abspath("config.yaml")
+with open(filePath) as file:
     config = yaml.load(file, Loader=yaml.SafeLoader)
 
 authenticator = stauth.Authenticate(
