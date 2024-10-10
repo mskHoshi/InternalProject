@@ -1,0 +1,13 @@
+[theme]
+# Primary color used for interactive elements
+primaryColor = "#0000cd"  # Medium Blue
+
+# Background colors
+backgroundColor = "#ffffff"  # White
+secondaryBackgroundColor = "#F0F8FF"  # AliceBlue
+
+# Text color
+textColor = "#000000"  # Black
+
+# Font family
+font = "sans serif"

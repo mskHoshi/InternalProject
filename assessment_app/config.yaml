@@ -1,0 +1,13 @@
+cookie:
+  expiry_days: 1
+  key: some_signature_keys
+  name: some_cookie_name
+credentials:
+  usernames:
+    msk2:
+      email: msk@msk2.co.jp
+      name: MSK Admin
+      password: $2b$12$BTnvK9H8BJV9UBp/fCK3iOpAor4a2lCSZpoUZmPK0NY0WNZ3L34pS
+preauthorized:
+  emails:
+  - melsby@gmail.com
