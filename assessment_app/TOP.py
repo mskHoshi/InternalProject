@@ -20,7 +20,7 @@ button_css = f"""
 """
 st.markdown(button_css, unsafe_allow_html=True)
 
-with open('config.yaml') as file:
+with open('./config.yaml') as file:
     config = yaml.load(file, Loader=yaml.SafeLoader)
 
 authenticator = stauth.Authenticate(
