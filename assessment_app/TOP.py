@@ -21,8 +21,8 @@ button_css = f"""
 """
 st.markdown(button_css, unsafe_allow_html=True)
 
-#with open('config.yaml') as file:
-with open('/mount/src/internalproject/assessment_app/config.yaml') as file:
+with open('config.yaml') as file:
+#with open('/mount/src/internalproject/assessment_app/config.yaml') as file:
     config = yaml.load(file, Loader=yaml.SafeLoader)
 
 authenticator = stauth.Authenticate(
@@ -44,7 +44,8 @@ if st.session_state["authentication_status"]:
     #st.write(f'ログインに成功しました')
 	# ここにログイン後の処理を書く。
     # データベースに接続する
-    conn, c = connect_db('.\data\personnelAssessment.db')
+    #conn, c = connect_db('.\data\personnelAssessment.db')
+    conn, c = connect_db('./data/personnelAssessment.db')
 
 # 評価結果一覧を表示
     st.subheader('評価結果Ⅰ')
